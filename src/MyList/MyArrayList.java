@@ -19,7 +19,7 @@ public class MyArrayList <T> {
         list = (T[]) new Object[DEFAULT_CAPACITY];    }
     public MyArrayList(int capacity){
         if (capacity <= 0) {
-            throw new IllegalArgumentException("соси хуй");
+            throw new IllegalArgumentException("длинна должна быть больше 0");
         }
         list = (T[]) new Object[capacity];
     }

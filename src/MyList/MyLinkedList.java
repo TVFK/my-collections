@@ -32,7 +32,7 @@ public class MyLinkedList <T>{
             currentIndex++;
             temp = temp.getNext();
         }
-        throw new IllegalArgumentException("wrong index has been entered");
+        throw new IllegalArgumentException("введен неликвиный индекс");
     }
 
     public void remove(int index){
