@@ -14,7 +14,7 @@ public class MyStack <T>{
 
     public MyStack(int capacity){
         if(capacity < 0){
-            throw new IllegalArgumentException("sosi biby");
+            throw new IllegalArgumentException("capacity must be more then 0");
         }
         array = (T[]) new Object[capacity];
     }
