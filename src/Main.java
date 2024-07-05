@@ -4,18 +4,13 @@
  import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
  import java.util.*;
+ import java.util.stream.Collectors;
 
  public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
 
-        MyHashMap<Integer, Integer> map = new MyHashMap<>();
+        String s = "abc####d##c#";
 
-        map.put(1, 2);
-        map.put(1, 4);
-        map.put(3, 8);
-
-
-        System.out.println(map.get(1));
+        System.out.println(s.replaceAll("#", ""));
     }
 }
